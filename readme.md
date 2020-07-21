@@ -29,5 +29,6 @@ See .github/workflows/workflow.yaml
 ## Development
 * Add route at main.py, Add core logic at core.py, Add unit test for core at test.py
 * Run `make test` for unit test
+* Run `python main.py` to start local test server
 * Git add, commit, push to trigger CI to run unit-test
 * Git tag -a v0.1, push tag to trigger CI to run unit-test and deploy to google cloud function
