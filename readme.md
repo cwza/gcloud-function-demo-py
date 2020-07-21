@@ -26,7 +26,7 @@ See .github/workflows/workflow.yaml
 * jobs.test runs unit test on every push and pull request (including tag push)
 * jobs.deploy runs deploy on every tag push
 
-## Devlepment
+## Development
 * Add route at main.py, Add core logic at core.py, Add unit test for core at test.py
 * Run `make test` for unit test
 * Git add, commit, push to trigger CI to run unit-test
