@@ -6,6 +6,22 @@
 * Github action to automatically run unit test on each push and pull request
 * Github action to automatically deploy to google cloud function after each tag push
 
+## Directory Structure
+* Program
+    + main.py: route
+    + core.py: core logic
+    + test.py: test for core logic
+    + requirements.txt: dependencies
+* Environmet Variable
+    + .envrc: local shell
+    + .gcloudenv.yaml: google cloud function
+* Settings of ignore files
+    + .gitignore: ignore files of git
+    + .gcloudignore: ignore files of google cloud function
+* Others
+    + .github/workflows/workflow.yaml: script of github action
+    + Makefile: some handful script, readme.md
+
 ## Google Cloud Settings
 1. Add a service account with these IAM
     + Cloud Functions Developer
@@ -29,6 +45,8 @@ See .github/workflows/workflow.yaml
 ## Development
 * Add route at main.py, Add core logic at core.py, Add unit test for core at test.py
 * Run `make test` for unit test
+* Run `curl "http://127.0.0.1:5000/entry?str1=hello&str2=world"` to test server on local 
 * Run `python main.py` to start local test server
 * Git add, commit, push to trigger CI to run unit-test
 * Git tag -a v0.1, push tag to trigger CI to run unit-test and deploy to google cloud function
+* Run `curl "https://URL_ON_PRODUCTION/entry?str1=hello&str2=world"` to test server on production
