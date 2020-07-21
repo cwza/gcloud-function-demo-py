@@ -45,8 +45,8 @@ See .github/workflows/workflow.yaml
 ## Development
 * Add route at main.py, Add core logic at core.py, Add unit test for core at test.py
 * Run `make test` for unit test
-* Run `curl "http://127.0.0.1:5000/entry?str1=hello&str2=world"` to test server on local 
 * Run `python main.py` to start local test server
+* Run `curl "http://127.0.0.1:5000/entry?str1=hello&str2=world"` to test server on local 
 * Git add, commit, push to trigger CI to run unit-test
-* Git tag -a v0.1, push tag to trigger CI to run unit-test and deploy to google cloud function
-* Run `curl "https://URL_ON_PRODUCTION/entry?str1=hello&str2=world"` to test server on production
+* Git tag v0.1, push tag to trigger CI to run unit-test and deploy to google cloud function
+* Run `curl "https://PRODUCTION_URL/entry?str1=hello&str2=world"` to test server on production
