@@ -1,5 +1,5 @@
 # Google Cloud Function Demo
->> Python Flask Server + Github Action + Google Cloud Function
+>> Example of github-action that automatically deploy flask server to google cloud function
 
 ## Main Purpose
 * Simple flask server with simple test just for demo
